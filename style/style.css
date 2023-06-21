@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+html {
+  font-size: 15px;
+}
+html body {
+  position: relative;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsla(0deg, 0%, 100%, 0.65);
+  font-family: "Lexend Deca", sans-serif;
+  justify-content: center;
+}
+html body .container {
+  margin: 6rem 1.5rem 6rem 1.5rem;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 22rem;
+}
+html body .container .columns {
+  padding: 3rem;
+}
+html body .container .columns h2 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: hsl(0deg, 0%, 95%);
+}
+html body .container .columns p {
+  line-height: 1.5rem;
+}
+html body .container .columns button {
+  margin-top: 1rem;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 2rem;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+}
+html body .container .columns button:hover {
+  cursor: pointer;
+  border: 0.15rem solid hsl(0deg, 0%, 95%);
+}
+html body .container .column1 {
+  border-radius: 0.7rem 0.7rem 0 0;
+  background-color: hsl(31deg, 77%, 52%);
+}
+html body .container .column1 button {
+  color: hsl(31deg, 77%, 52%);
+}
+html body .container .column1 button:hover {
+  -webkit-animation: hover1 0.3s;
+          animation: hover1 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+html body .container .column1 button:active {
+  -webkit-animation: active1;
+          animation: active1;
+}
+html body .container .column2 {
+  background-color: hsl(184deg, 100%, 22%);
+}
+html body .container .column2 button {
+  color: hsl(184deg, 100%, 22%);
+}
+html body .container .column2 button:hover {
+  -webkit-animation: hover2 0.3s;
+          animation: hover2 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+html body .container .column2 button:active {
+  -webkit-animation: active2;
+          animation: active2;
+}
+html body .container .column3 {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 0.7rem 0.7rem;
+}
+html body .container .column3 button {
+  color: hsl(179deg, 100%, 13%);
+}
+html body .container .column3 button:hover {
+  -webkit-animation: hover3 0.3s;
+          animation: hover3 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+html body .container .column3 button:active {
+  -webkit-animation: active3;
+          animation: active3;
+}
+
+@-webkit-keyframes hover1 {
+  to {
+    background-color: hsl(31deg, 77%, 52%);
+    color: hsl(0deg, 0%, 95%);
+  }
+}
+
+@keyframes hover1 {
+  to {
+    background-color: hsl(31deg, 77%, 52%);
+    color: hsl(0deg, 0%, 95%);
+  }
+}
+@-webkit-keyframes active1 {
+  to {
+    background-color: hsl(0deg, 0%, 95%);
+    color: hsl(31deg, 77%, 52%);
+  }
+}
+@keyframes active1 {
+  to {
+    background-color: hsl(0deg, 0%, 95%);
+    color: hsl(31deg, 77%, 52%);
+  }
+}
+@-webkit-keyframes hover2 {
+  to {
+    background-color: hsl(184deg, 100%, 22%);
+    color: hsl(0deg, 0%, 95%);
+  }
+}
+@keyframes hover2 {
+  to {
+    background-color: hsl(184deg, 100%, 22%);
+    color: hsl(0deg, 0%, 95%);
+  }
+}
+@-webkit-keyframes active2 {
+  to {
+    background-color: hsl(0deg, 0%, 95%);
+    color: hsl(184deg, 100%, 22%);
+  }
+}
+@keyframes active2 {
+  to {
+    background-color: hsl(0deg, 0%, 95%);
+    color: hsl(184deg, 100%, 22%);
+  }
+}
+@-webkit-keyframes hover3 {
+  to {
+    background-color: hsl(179deg, 100%, 13%);
+    color: hsl(0deg, 0%, 95%);
+  }
+}
+@keyframes hover3 {
+  to {
+    background-color: hsl(179deg, 100%, 13%);
+    color: hsl(0deg, 0%, 95%);
+  }
+}
+@-webkit-keyframes active3 {
+  to {
+    background-color: hsl(0deg, 0%, 95%);
+    color: hsl(179deg, 100%, 13%);
+  }
+}
+@keyframes active3 {
+  to {
+    background-color: hsl(0deg, 0%, 95%);
+    color: hsl(179deg, 100%, 13%);
+  }
+}
+@media screen and (min-width: 768px) {
+  html body {
+    align-items: center;
+  }
+  html body .container {
+    margin: 11rem 1.5rem 8.5rem 1.5rem;
+    flex-direction: row;
+    max-width: 62rem;
+    max-height: auto;
+  }
+  html body .container .columns {
+    flex: 1 1 0;
+  }
+  html body .container .columns button {
+    margin-top: 5.5rem;
+  }
+  html body .container .column1 {
+    border-radius: 0.7rem 0 0 0.7rem;
+  }
+  html body .container .column3 {
+    border-radius: 0 0.7rem 0.7rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */

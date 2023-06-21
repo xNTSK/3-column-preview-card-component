@@ -1,0 +1,155 @@
+$BrightOrange: hsl(31, 77%, 52%);
+$DarkCyan: hsl(184, 100%, 22%);
+$VeryDarkCyan: hsl(179, 100%, 13%);
+$TransparentWhite: hsla(0, 0%, 100%, 0.65); // paragraphs
+$VeryLightGray: hsl(0, 0%, 95%); // background, headings, buttons
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+// font-family: 'Big Shoulders Display', cursive;
+// font-family: 'Lexend Deca', sans-serif;
+html {
+  font-size: 15px;
+  body {
+    position: relative;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: $VeryLightGray;
+    color: $TransparentWhite;
+    font-family: "Lexend Deca", sans-serif;
+    justify-content: center;
+    .container {
+      margin: 6rem 1.5rem 6rem 1.5rem;
+      border-radius: 0.7rem;
+      display: flex;
+      flex-direction: column;
+      max-width: 22rem;
+      .columns {
+        padding: 3rem;
+        h2 {
+          font-family: "Big Shoulders Display", cursive;
+          text-transform: uppercase;
+          font-size: 2.5rem;
+          color: $VeryLightGray;
+        }
+        p {
+          line-height: 1.5rem;
+        }
+        button {
+          margin-top: 1rem;
+          height: 3rem;
+          width: 10rem;
+          border-radius: 2rem;
+          border: none;
+          font-family: "Lexend Deca", sans-serif;
+          font-size: 1rem;
+          &:hover {
+            cursor: pointer;
+            border: 0.15rem solid $VeryLightGray;
+          }
+        }
+      }
+      .column1 {
+        border-radius: 0.7rem 0.7rem 0 0;
+        background-color: $BrightOrange;
+        button {
+          color: $BrightOrange;
+        }
+        button:hover {
+          animation: hover1 0.3s;
+          animation-fill-mode: forwards;
+        }
+        button:active {
+          animation: active1;
+        }
+      }
+      .column2 {
+        background-color: $DarkCyan;
+        button {
+          color: $DarkCyan;
+        }
+        button:hover {
+          animation: hover2 0.3s;
+          animation-fill-mode: forwards;
+        }
+        button:active {
+          animation: active2;
+        }
+      }
+      .column3 {
+        background-color: $VeryDarkCyan;
+        border-radius: 0 0 0.7rem 0.7rem;
+        button {
+          color: $VeryDarkCyan;
+        }
+        button:hover {
+          animation: hover3 0.3s;
+          animation-fill-mode: forwards;
+        }
+        button:active {
+          animation: active3;
+        }
+      }
+    }
+  }
+}
+@keyframes hover1 {
+  to {
+    background-color: $BrightOrange;
+    color: $VeryLightGray;
+  }
+}
+@keyframes active1 {
+  to {
+    background-color: $VeryLightGray;
+    color: $BrightOrange;
+  }
+}
+@keyframes hover2 {
+  to {
+    background-color: $DarkCyan;
+    color: $VeryLightGray;
+  }
+}
+@keyframes active2 {
+  to {
+    background-color: $VeryLightGray;
+    color: $DarkCyan;
+  }
+}
+@keyframes hover3 {
+  to {
+    background-color: $VeryDarkCyan;
+    color: $VeryLightGray;
+  }
+}
+@keyframes active3 {
+  to {
+    background-color: $VeryLightGray;
+    color: $VeryDarkCyan;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    body {
+      align-items: center;
+      .container {
+        margin: 11rem 1.5rem 8.5rem 1.5rem;
+        flex-direction: row;
+        max-width: 62rem;
+        max-height: auto;
+        .columns {
+          flex: 1 1 0;
+          button {
+            margin-top: 5.5rem;
+          }
+        }
+        .column1 {
+          border-radius: 0.7rem 0 0 0.7rem;
+        }
+        .column3 {
+          border-radius: 0 0.7rem 0.7rem 0;
+        }
+      }
+    }
+  }
+}
